@@ -1,0 +1,18 @@
+<h2>Post Index</h2>
+
+<div>
+  {{#link-to "posts.new"}}Create Post{{/link-to}}
+</div><br>
+
+{{#each post in model}}
+  <div>
+    {{#link-to "posts.show" post}}
+      <h4>Title: {{post.title}}</h4>
+    {{/link-to}}
+    <p>Link: {{post.link}}</p>
+    <p>Username: {{post.username}}</p>
+    <p>Description: {{post.description}}</p>
+  </div><br>
+{{/each}}
+
+{{outlet}}
