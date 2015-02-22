@@ -1,0 +1,26 @@
+#siteTitle{
+  margin-top: -29px;
+  margin-bottom: -22px;
+}
+
+#navBar{
+  background-color: #9999ff;
+}
+
+#postIndexWell{
+  margin-left: 192px;
+  margin-right: 196px;
+}
+
+#postsHeader{
+  margin-left: 600px;
+}
+
+#postsIndexHeader{
+  margin-left: 361px;
+  text-decoration: underline;
+}
+
+#createPostButton{
+
+}

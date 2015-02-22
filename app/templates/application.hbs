@@ -1,3 +1,14 @@
-<h2 id="title">Welcome to Ember.js</h2>
-
+<div id="navBar" class="ui menu">
+  <a class="item">
+    {{#link-to "posts"}}<i>View Posts</i>{{/link-to}}
+  </a>
+  <a class="item">
+    {{#link-to "posts.new"}}<i>Create A Post</i>{{/link-to}}
+  </a>
+  <div class="right menu">
+    <div id="siteTitle" class="item">
+      <h4 id="siteName">My Terrible Reddit Clone</h4>
+    </div>
+  </div>
+</div>
 {{outlet}}
