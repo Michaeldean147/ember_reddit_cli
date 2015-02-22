@@ -1,0 +1,6 @@
+<h3>New Comment</h3>
+
+{{input value=model.username placeholder="username"}}
+{{input value=model.body placeholder="comment"}}
+
+<button {{action "createComment" model}}>Submit Comment</button>

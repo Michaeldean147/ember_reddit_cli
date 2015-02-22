@@ -4,6 +4,7 @@
 <p>Description: {{model.description}}</p>
 
 <button {{action "deletePost" model}}>Delete</button><br>
+{{link-to "Create Comment" 'comments.new'}}
 {{link-to "View Comments" 'comments.index'}}<br>
 {{#link-to 'posts.edit' model}} Edit Post{{/link-to}}<br>
 {{#link-to "posts.index"}}Back{{/link-to}}
