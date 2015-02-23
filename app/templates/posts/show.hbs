@@ -1,12 +1,43 @@
-<h2>Title: {{model.title}}</h2>
-<p>Link: {{model.link}}</p>
-<p>Username: {{model.username}}</p>
-<p>Description: {{model.description}}</p>
 
-<button {{action "deletePost" model}}>Delete</button><br>
-{{link-to "Create Comment" 'comments.new'}}<br>
-{{link-to "View Comments" 'comments.index'}}<br>
-{{#link-to 'posts.edit' model}} Edit Post{{/link-to}}<br>
-{{#link-to "posts.index"}}Back{{/link-to}}
+<div id="postIndexWell" class="one column stackable ui grid">
+  <div class="column">
+    <div class="ui segment">
+      <h2 id="showHeader">Viewing "{{model.title}}"</h2>
+        <div class="two column stackable ui grid">
+          <div class="column">
+            <div class="ui segment">
+              <h2 id="postShowTitle">Title: {{model.title}}</h2>
+              <p>Link: {{model.link}}</p>
+              <p>Username: {{model.username}}</p>
+              <p>Description: {{model.description}}</p>
+           </div>
+          </div>
 
-{{outlet}}
+          <div class="column">
+           <div class="ui segment">
+             <div id="showPostsLinks">
+               {{link-to "Create Comment" 'comments.new'}}
+             </div>
+
+             <div id="showPostsLinks">
+               {{link-to "View Comments" 'comments.index'}}
+             </div>
+
+             <div id="showPostsLinks">
+               {{#link-to 'posts.edit' model}} Edit Post{{/link-to}}
+             </div>
+
+             <div id="showPostLinks">
+               {{#link-to "posts.index"}}Back{{/link-to}}
+             </div>
+
+             <div id="deletePostButton">
+               <button {{action "deletePost" model}}>Delete Post</button>
+             </div>
+           </div>
+          </div>
+      </div>
+      {{outlet}}
+    </div>
+  </div>
+</div>

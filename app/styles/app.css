@@ -21,6 +21,40 @@
   text-decoration: underline;
 }
 
-#createPostButton{
+#showHeader{
+  text-decoration: underline;
+}
 
+#postShowTitle{
+  margin-top: 1px;
+}
+
+#showPostsLinks{
+  margin-bottom: 5px;
+}
+
+#deletePostButton{
+  margin-top: 17px;
+}
+
+#newCommentUsername{
+  margin-bottom: 14px;
+  margin-left: 2px;
+}
+
+#newCommentBody{
+  margin-bottom: 14px;
+  margin-left: 1px;
+}
+
+#newCommentSubmitButton{
+  margin-left: 1px;
+}
+
+#newCommentHeader{
+  margin-left: 1px;
+}
+
+#comment{
+  margin-bottom: 35px;
 }

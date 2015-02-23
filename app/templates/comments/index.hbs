@@ -1,7 +1,10 @@
-{{#each comment in model.comments}}
-<li>
-  {{comment.username}} - {{comment.body}} <button {{action "deleteComment" comment}}>Delete</button>
-</li>
-{{/each}}
+<h2>Comments for {{model.title}}</h2>
+<div id="commentsForPost">
+  {{#each comment in model.comments}}
+    <li id="comment">
+      {{comment.username}} - {{comment.body}} <button {{action "deleteComment" comment}}>Delete</button>
+    </li>
+  {{/each}}
+</div>
 
 {{outlet}}

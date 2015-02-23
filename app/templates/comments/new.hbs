@@ -1,6 +1,13 @@
-<h3>New Comment</h3>
+<h3 id="newCommentHeader">New Comment</h3>
 
-{{input value=model.username placeholder="username"}}
-{{input value=model.body placeholder="comment"}}
+ <div id="newCommentUsername">
+   {{input value=model.username placeholder="username"}}
+ </div>
 
-<button {{action "createComment" model}}>Submit Comment</button>
+ <div id="newCommentBody">
+   {{input value=model.body placeholder="comment"}}
+ </div>
+
+ <div id="newCommentSubmitButton">
+   <button {{action "createComment" model}}>Submit Comment</button>
+ </div>
