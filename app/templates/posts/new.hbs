@@ -1,6 +1,29 @@
-{{input value=model.title placeholder="title"}}
-{{input value=model.link placeholder="link"}}
-{{input value=model.username placeholder="username"}}
-{{textarea value=model.description placeholder="description"}}
+<div id="postIndexWell" class="one column stackable ui grid">
+  <div class="column">
+    <div class="ui segment">
+      <div class="ui form">
+      <h2 id="postsIndexHeader">New Post</h2>
+      <div class="field">
+        {{input value=model.title placeholder="title"}}
+      </div>
 
-<button {{action "save" model}}>Submit</button>
+      <div class="field" id="newPostLink">
+        {{input value=model.link placeholder="link"}}
+
+      </div>
+
+      <div class="field" id="newPostUsername">
+        {{input value=model.username placeholder="username"}}
+      </div>
+
+      <div class="field" id="newPostDescription">
+        {{textarea value=model.description placeholder="description"}}
+      </div>
+
+      <div id="newPostSubmit">
+        <button {{action "save" model}}>Submit</button>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
